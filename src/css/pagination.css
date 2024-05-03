@@ -1,0 +1,25 @@
+.pagination-container .row .col-12 {
+	width: fit-content;
+}
+
+.pagination-container button {
+	height: 2.5em;
+	width: 2.5em;
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: 1px solid hsl(180, 3%, 70%);
+	color: var(--accent-dark);
+	background-color: transparent;
+	transition: border var(--transition);
+}
+
+.pagination-container button:hover {
+	border-color: var(--dominant-teal);
+}
+
+button.active {
+	border-color: var(--dominant-teal);
+}

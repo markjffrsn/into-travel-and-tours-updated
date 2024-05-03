@@ -1,0 +1,85 @@
+.bg-about {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url(../img/bg-aboutt.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.about-section * h2,
+.what-we-do-section * h2 {
+	font-size: 2rem;
+	font-size: clamp(2rem, 1.647887323943662rem + 1.5023474178403755vw, 3rem);
+	color: var(--accent-dark) !important;
+}
+
+.about-section * p,
+.what-we-do-section * p {
+	font-size: 1.125rem;
+	color: var(--accent-dark) !important;
+}
+
+.about-section,
+.what-we-do-section {
+	padding: 135px 0;
+	gap: 61px;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.text-container p span {
+	font-family: var(--ff-serif) !important;
+	font-style: italic;
+	font-weight: 500;
+}
+.about-section .img-container-1 {
+	height: 371px;
+	position: relative;
+}
+
+.img-container-1 img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 20px 0 0 0;
+}
+
+/* What we do */
+.what-we-do {
+	background-color: var(--complementary-green-light);
+}
+
+.what-we-do-section .img-container-2 {
+	position: relative;
+}
+
+.what-we-do-section .img-container-2 img {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 0 20px 0 0;
+}
+
+/* Breakpoints */
+/* Tablet */
+@media (max-width: 61.99875em) {
+	.about-section,
+	.what-we-do-section {
+		padding: 3rem 0;
+		gap: 25px;
+		flex-wrap: wrap;
+	}
+
+	.about-section .img-container-1 {
+		height: auto;
+	}
+
+	.img-container-1 img,
+	.what-we-do-section .img-container-2 img {
+		height: 250px;
+		position: initial;
+		display: block;
+	}
+}

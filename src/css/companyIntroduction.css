@@ -1,0 +1,134 @@
+.company-intro-container {
+	padding: 6.25rem;
+}
+
+.about-container .row {
+	gap: 20px;
+	flex-wrap: nowrap;
+}
+
+.about-container .intro-content {
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.about-container * p {
+	font-size: 1.125rem;
+}
+
+/* .about-container p:not(:nth-child(2)) {
+	font-weight: var(--fw-light);
+} */
+
+.about-container * h6 {
+	position: relative;
+	font-family: var(--ff-sans-serif);
+	font-size: 1rem;
+	letter-spacing: 0.0625rem;
+	margin-bottom: 1.25rem;
+}
+
+.about-container * img {
+	opacity: 0.7;
+	z-index: -3;
+}
+
+.about-container .vision-title,
+.mission-title {
+	font-size: 2rem;
+	font-size: clamp(2rem, 1.647887323943662rem + 1.5023474178403755vw, 3rem);
+}
+
+.about-container * h6::after {
+	content: '';
+	height: 1px; /* 0.125em */
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 2.8125em;
+	background-color: var(--accent-light);
+}
+
+.about-container .meet-us {
+	background: var(--gradient);
+	color: var(--accent-light);
+	overflow: hidden;
+}
+
+.meet-us-content .meet-us-title {
+	margin-bottom: 2.25rem;
+	font-size: 3.125rem;
+	font-size: clamp(3.125rem, 2.816901408450704rem + 1.3145539906103285vw, 4rem);
+}
+
+.meet-us img {
+	max-height: 12.5em;
+	position: absolute;
+	right: 3rem;
+	bottom: -7rem;
+}
+
+/* Vision */
+.vision {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('../img/bg-vision.jpg');
+	background-position: center;
+	background-size: cover;
+	color: var(--accent-light);
+}
+
+.vision-content p {
+	margin-bottom: 3.125rem;
+}
+
+.vision img {
+	max-width: 7.38em;
+	position: absolute;
+	top: -3.75em;
+	right: 2.69em;
+}
+
+/* Mission */
+.mission {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('../img/bg-mission.jpg');
+	background-position: center;
+	background-size: cover;
+	color: var(--accent-light);
+}
+
+.mission-content p {
+	margin-top: 3.125rem;
+}
+
+.mission img {
+	max-width: 7.38em;
+	position: absolute;
+	bottom: 2rem;
+	right: -3.7rem;
+}
+
+/* Breakpoints */
+/* Tablet */
+@media (max-width: 61.99875em) {
+	.company-intro-container {
+		padding: 3rem 0.5rem;
+	}
+
+	.about-container .row {
+		flex-wrap: wrap;
+	}
+
+	.meet-us-title {
+		margin-bottom: 1.5rem !important;
+	}
+}

@@ -1,0 +1,78 @@
+.carousel-indicators {
+	gap: 3px;
+}
+
+.carousel-indicators > button {
+	height: 0.5em !important;
+	width: 0.5em !important;
+	border-radius: 50% !important;
+}
+
+.carousel-item {
+	height: 100vh;
+	clip-path: inset(0);
+}
+
+.carousel-item img {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.5;
+}
+
+.carousel-caption {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.carousel-caption h3 {
+	font-style: italic;
+	text-transform: capitalize;
+	transform: translateY(-7rem);
+}
+.carousel-caption h1 {
+	text-transform: capitalize;
+	font-size: 2.3rem;
+	font-size: clamp(2.3rem, 1.701408450704225rem + 2.553990610328639vw, 4rem);
+}
+.carousel-caption p {
+	font-weight: 300;
+}
+
+.carousel-item {
+	position: relative;
+	display: none;
+	align-items: center;
+	width: 100%;
+	transition-delay: 300ms !important;
+	transition: transform 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	z-index: 1;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+	display: block;
+}
+
+/* Breakpoints */
+/* Tablet */
+@media (max-width: 61.99875em) {
+	.carousel-caption {
+		width: calc(100% - 12rem);
+	}
+	.carousel-indicators {
+		display: none;
+	}
+}
+
+/* Mobile */
+@media (max-width: 35.99875em) {
+	.carousel-caption {
+		width: calc(100% - 7rem);
+	}
+}
