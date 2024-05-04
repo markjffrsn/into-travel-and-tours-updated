@@ -1,6 +1,7 @@
 import Images from "./Images";
 import Icons from "./Icons";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Hero() {
   return (
